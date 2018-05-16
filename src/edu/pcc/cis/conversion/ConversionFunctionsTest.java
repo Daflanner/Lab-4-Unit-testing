@@ -17,10 +17,19 @@ public class ConversionFunctionsTest {
     }
 
     // TODO: Write a test for a negative celsius that converts to a positive fahrenheit
+    @Test
+    public void celsiusNeg5IsFahrenheit23() {assertEquals( 23, ConversionFunctions.celsiusToFahrenheit(-5)); }
+
 
     // TODO: Write a test for a negative celsius that converts to a negative fahrenheit
+    @Test
+    public void celsiusNeg30IsFahrenheitneg22() {assertEquals( -22, ConversionFunctions.celsiusToFahrenheit(-30)); }
+
 
     // TODO: Write a test for a celsius value that converts to 0 fahrenheit
+    @Test
+    public void celsiusNeg17IsFahrenheitneg0() {assertEquals( 0, ConversionFunctions.celsiusToFahrenheit(-18)); }
+
 
     // cupsToTablespoons tests ---------------------------------------------------------------------------
     // TODO: Write a test for 0 cups converts to 0 tablespoons - run the test & see that it passes
