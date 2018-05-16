@@ -69,9 +69,21 @@ public class ConversionFunctionsTest {
     }
 
     // TODO: Complete the test below for a variety of invalid month numbers; be sure to include bounds
+    @Test
+    public void monthsBeyond12() {
+        assertEquals(" ", ConversionFunctions.monthNumToMonthName(13).toLowerCase());
+        assertEquals(" ", ConversionFunctions.monthNumToMonthName(22).toLowerCase());
+    }
     // TODO: Run the test and see that it fails. Failing tests reveal bugs.
+    @Test
+    public void MixMatchmonths() {
+        assertEquals("march", ConversionFunctions.monthNumToMonthName(11).toLowerCase());
+        assertEquals("july", ConversionFunctions.monthNumToMonthName(3).toLowerCase());
+    }
     // TODO: Fix the implementation of monthNumToMonthName so that this test passes
     @Test
-    public void invalidMonthReturnsEmptyString() {
+    public void MixMatchmonths2() {
+        assertEquals("march", ConversionFunctions.monthNumToMonthName(3).toLowerCase());
+        assertEquals("july", ConversionFunctions.monthNumToMonthName(7).toLowerCase());
     }
 }

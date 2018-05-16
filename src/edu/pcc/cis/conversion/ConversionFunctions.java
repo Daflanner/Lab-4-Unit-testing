@@ -40,7 +40,9 @@ public class ConversionFunctions {
     public static String monthNumToMonthName(int monthNum) {
         // This method does not work correctly. You will fix it as you work through the tests.
         // Remove these comments once it is implemented correctly.
-        return MONTH_NAMES[monthNum];
+        if(monthNum < 12) {
+            return MONTH_NAMES[monthNum];
+        }else return " ";
     }
 }
 
