@@ -27,7 +27,9 @@ public class ConversionFunctions {
     public static int cupsToTablespoons(int cups) {
         // This method does not work correctly. You will fix it as you work through the tests.
         // Remove these comments once it is implemented correctly.
-        return 0;
+            if(cups <0 ){ return 0;}
+        return (int) cups * 16;
+
     }
 
     /**
